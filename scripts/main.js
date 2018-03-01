@@ -1,2 +1,10 @@
-var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+function unhide(divID) {
+
+  var album = document.getElementById(divID);
+
+  if (album) {
+
+    album.className = (album.className == 'hidden') ? 'unhidden' : 'hidden';
+
+  }
+}
