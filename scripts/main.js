@@ -1,10 +1,10 @@
 function unhide(divID) {
 
-  var album = document.getElementById(divID);
+  var item = document.getElementById(divID);
 
-  if (album) {
+  if (item) {
 
-    album.className = (album.className == 'hidden') ? 'unhidden' : 'hidden';
+    item.className = (item.className == "hidden") ? "unhidden" : "hidden";
 
   }
 }
