@@ -39,28 +39,37 @@
 	</nav>
 	<div id="albumgrid">
 		<h1 class="text-center" id="helptexttop">Listen to both, then make your choice.</h1>
-		<div class="albuminfo" id="okcinfo">
-			<p class="albuminfotext">"OK Computer" is the 3rd studio album by Radiohead which was released in 1997. It's an alternative rock album which has been cited by listeners, critics and musicians as one of the greatest albums of all time. The lyrics depict a world fraught with
+		<div class="hidden" id="okcinfo">
+			<p id="leftinfotext">"OK Computer" is the 3rd studio album by Radiohead which was released in 1997. It's an alternative rock album which has been cited by listeners, critics and musicians as one of the greatest albums of all time. The lyrics depict a world fraught with
 				rampant consumerism, social alienation, emotional isolation and political malaise.</p>
-			<ul style="list-style-type:none; padding-top:1em">
+			<ul class="links" style="list-style-type:none; padding-top:1em">
 				<li><a href="https://open.spotify.com/album/7dxKtc08dYeRVHt3p9CZJn"><h3>Spotify</h3></a></li>
 				<li><a href="https://www.youtube.com/playlist?list=PLkieEAqGXAKVE0smB9Qy9hoGqn89RO_vu"><h3>Youtube</h3></a></li>
 				<li><a href="https://genius.com/albums/Radiohead/Ok-computer"><h3>Genius</h3></a></li>
 				<li><a href="https://en.wikipedia.org/wiki/OK_Computer"><h3>Wikipedia</h3></a></li>
 			</ul>
 		</div>
+		<div class="hidden" id="kidainfo">
+			<p id="rightinfotext">Kid A is the 4th studio album by Radiohead. After having suffered a mental breakdown promoting Radiohead's acclaimed 1997 album OK Computer, songwriter Thom Yorke envisioned a radical change in direction. The band replaced their rock sound with synthesisers, drum machines, the ondes Martenot, string orchestras and brass instruments, and incorporated influences from electronic music, krautrock, jazz, and 20th-century classical music.</p>
+			<ul style="list-style-type:none; padding-top:1em">
+				<li><a href="https://open.spotify.com/album/19RUXBFyM4PpmrLRdtqWbp"><h3>Spotify</h3></a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PL0iZnUyS5tnQfHOMw5pR4ODpsY09cKVjJ"><h3>Youtube</h3></a></li>
+				<li><a href="https://genius.com/albums/Radiohead/Kid-a"><h3>Genius</h3></a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Kid_A"><h3>Wikipedia</h3></a></li>
+			</ul>
+		</div>
 
 		<div class="albumthumb" id="okc">
 			<img class="albumimg" src="images/radiohead/ok_computer.jpg" alt="OK Computer">
 			<div class="fullpanelinfoicon" id="okcfpinfoicon">
-				<img id="okcinfoicon" src="images/infoicon50px.png"/>
+				<img id="okcinfoicon" onclick="unhide('okcinfo')" src="images/infoicon50px.png"/>
 			</div>
 			<h4 class="desc">OK Computer</h4>
 		</div>
 		<div class="albumthumb" id="kida">
 			<img class="albumimg" src="images/radiohead/kid_a.jpg" alt="Kid A">
 			<div class="fullpanelinfoicon" id="kidafpinfoicon">
-				<img id="kidainfoicon" src="images/infoicon50px.png"/>
+				<img id="kidainfoicon" onclick="unhide('kidainfo')" src="images/infoicon50px.png"/>
 			</div>
 			<h4 class="desc">Kid A</h4>
 		</div>
