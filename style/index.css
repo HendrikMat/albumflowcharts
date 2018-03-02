@@ -247,6 +247,10 @@ button {
   visibility: hidden;
 }
 
+.infoicon {
+  opacity: 0.5;
+}
+
 #okc:hover #okcfpinfoicon{
   visibility: visible;
   opacity: 1;

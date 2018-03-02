@@ -8,6 +8,14 @@
 	<title>Album Flowcharts</title>
 	<link href="style/index.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $("#htttoption").click(function(){
+	        $("#httt").fadeIn();
+	    });
+	});
+	</script>
 </head>
 
 <body id="grid">
@@ -62,18 +70,19 @@
 		<div class="albumthumb" id="okc">
 			<img class="albumimg" src="images/radiohead/ok_computer.jpg" alt="OK Computer">
 			<div class="fullpanelinfoicon" id="okcfpinfoicon">
-				<img id="okcinfoicon" onclick="unhide('okcinfo')" src="images/infoicon50px.png"/>
+				<img id="okcinfoicon" class="infoicon" onclick="unhide('okcinfo')" src="images/infoicon.png"/>
 			</div>
 			<h4 class="desc">OK Computer</h4>
 		</div>
 		<div class="albumthumb" id="kida">
 			<img class="albumimg" src="images/radiohead/kid_a.jpg" alt="Kid A">
 			<div class="fullpanelinfoicon" id="kidafpinfoicon">
-				<img id="kidainfoicon" onclick="unhide('kidainfo')" src="images/infoicon50px.png"/>
+				<img id="kidainfoicon" class="infoicon" onclick="unhide('kidainfo')" src="images/infoicon.png"/>
 			</div>
 			<h4 class="desc">Kid A</h4>
 		</div>
 		<h2 id="choosetext">I liked <button onclick="unhide('thebends')">OK Computer</button> / <button onclick="unhide('amnesiac')">Kid A</button> / <button onclick="unhide('httt')">both</button>.</h2>
+
 	<div id="albumgrid2">
 			<div class="hidden" id="thebends">
 				<img class="albumimg" src="images/radiohead/the_bends.jpg" alt="The Bends">
@@ -88,7 +97,7 @@
 				<h4 class="desc">Hail To the Thief</h4>
 			</div>
 	</div>
-	</div>
+</div>
 	<script src="scripts/main.js"></script>
 </body>
 
