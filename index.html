@@ -7,15 +7,8 @@
 
 	<title>Album Flowcharts</title>
 	<link href="style/index.css" type="text/css" rel="stylesheet" />
+	<link href="style/info.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-	    $("#htttoption").click(function(){
-	        $("#httt").fadeIn();
-	    });
-	});
-	</script>
 </head>
 
 <body id="grid">
@@ -26,14 +19,14 @@
 				<span class="fullpanellink"></span>
 			</a>
 		</div>
-		<div class="navitem" id="genre">
+		<div class="navitem" id="radiohead">
 			<a href="index.html">
 				Radiohead
 				<span class="fullpanellink"></span>
 			</a>
 		</div>
-		<div class="navitem" id="artist">
-			<a href="artist.html">
+		<div class="navitem" id="kanye">
+			<a href="kanye.html">
 				Kanye West
 				<span class="fullpanellink"></span>
 			</a>
@@ -45,7 +38,7 @@
 			</a>
 		</div>
 	</nav>
-	<div id="albumgrid">
+	<div id="body">
 		<h1 class="text-center" id="helptexttop">Listen to both, then make your choice.</h1>
 		<div class="hidden" id="okcinfo">
 			<p class="leftinfotext">"OK Computer" is the 3rd studio album by Radiohead which was released in 1997. It's an alternative rock album which has been cited by listeners, critics and musicians as one of the greatest albums of all time. The lyrics depict a world fraught with
@@ -58,7 +51,8 @@
 			</ul>
 		</div>
 		<div class="hidden" id="kidainfo">
-			<p class="rightinfotext">Kid A is the 4th studio album by Radiohead. After having suffered a mental breakdown promoting Radiohead's acclaimed 1997 album OK Computer, songwriter Thom Yorke envisioned a radical change in direction. The band replaced their rock sound with synthesisers, drum machines, the ondes Martenot, string orchestras and brass instruments, and incorporated influences from electronic music, krautrock, jazz, and 20th-century classical music.</p>
+			<p class="rightinfotext">Kid A is the 4th studio album by Radiohead. After having suffered a mental breakdown promoting Radiohead's acclaimed 1997 album OK Computer, songwriter Thom Yorke envisioned a radical change in direction. The band replaced their rock sound with synthesisers,
+				drum machines, the ondes Martenot, string orchestras and brass instruments, and incorporated influences from electronic music, krautrock, jazz, and 20th-century classical music.</p>
 			<ul class="links rightlinks">
 				<li><a href="https://open.spotify.com/album/19RUXBFyM4PpmrLRdtqWbp"><h3>Spotify</h3></a></li>
 				<li><a href="https://www.youtube.com/playlist?list=PL0iZnUyS5tnQfHOMw5pR4ODpsY09cKVjJ"><h3>Youtube</h3></a></li>
@@ -70,22 +64,23 @@
 		<div class="albumthumb" id="okc">
 			<img class="albumimg" src="images/radiohead/ok_computer.jpg" alt="OK Computer">
 			<div class="fullpanelinfoicon" id="okcfpinfoicon">
-				<img id="okcinfoicon" class="infoicon" onclick="unhide('okcinfo')" src="images/infoicon.png"/>
+				<img id="okcinfoicon" class="infoicon" onclick="unhide('okcinfo')" src="images/infoicon.png" />
 			</div>
 			<h4 class="desc">OK Computer</h4>
 		</div>
 		<div class="albumthumb" id="kida">
 			<img class="albumimg" src="images/radiohead/kid_a.jpg" alt="Kid A">
 			<div class="fullpanelinfoicon" id="kidafpinfoicon">
-				<img id="kidainfoicon" class="infoicon" onclick="unhide('kidainfo')" src="images/infoicon.png"/>
+				<img id="kidainfoicon" class="infoicon" onclick="unhide('kidainfo')" src="images/infoicon.png" />
 			</div>
 			<h4 class="desc">Kid A</h4>
 		</div>
 		<h2 id="choosetext">I liked <button onclick="unhide('thebends')">OK Computer</button> / <button onclick="unhide('amnesiac')">Kid A</button> / <button onclick="unhide('httt')">both</button>.</h2>
 
-	<div id="albumgrid2">
+		<div id="albumgrid2">
 			<div class="hidden" id="thebendsinfo">
-				<p class="rightinfotext">"The Bends" is the 2nd studio album by Radiohead. It has been described as an alternative rock, Britpop, and indie rock album. The Bends marked the beginning of a shift in aesthetics and themes for the band, with greater use of keyboards and more abrasive guitar tracks, while balancing them with subtler ones.</p>
+				<p class="rightinfotext">"The Bends" is the 2nd studio album by Radiohead. It has been described as an alternative rock, Britpop, and indie rock album. The Bends marked the beginning of a shift in aesthetics and themes for the band, with greater use of keyboards and more
+					abrasive guitar tracks, while balancing them with subtler ones.</p>
 				<ul class="links rightlinks">
 					<li><a href="https://open.spotify.com/album/500FEaUzn8lN9zWFyZG5C2"><h3>Spotify</h3></a></li>
 					<li><a href="https://www.youtube.com/playlist?list=PLDdjexgjElXTYl0B47qi92Q97E-CFQZzH"><h3>Youtube</h3></a></li>
@@ -94,7 +89,8 @@
 				</ul>
 			</div>
 			<div class="hidden" id="amnesiacinfo">
-				<p class="rightinfotext">"Amnesiac" is the 5th studio album by Radiohead. Recorded during the same sessions for the band's previous album Kid A, the album incorporates similar influences of electronic music, 20th century classical music, jazz and krautrock. Singer Thom Yorke described it as "another take on Kid A, a form of explanation.". Its lyrics and artwork explore themes influenced by memory and reincarnation, with influences from ancient Greek and Egyptian mythology.</p>
+				<p class="rightinfotext">"Amnesiac" is the 5th studio album by Radiohead. Recorded during the same sessions for the band's previous album Kid A, the album incorporates similar influences of electronic music, 20th century classical music, jazz and krautrock. Singer Thom Yorke
+					described it as "another take on Kid A, a form of explanation.". Its lyrics and artwork explore themes influenced by memory and reincarnation, with influences from ancient Greek and Egyptian mythology.</p>
 				<ul class="links rightlinks">
 					<li><a href="https://open.spotify.com/album/6V9YnBmFjWmXCBaUVRCVXP"><h3>Spotify</h3></a></li>
 					<li><a href="https://www.youtube.com/playlist?list=PLUzsWxMv86UkHQVc-wJ80FpM9V5aOWVhc"><h3>Youtube</h3></a></li>
@@ -103,7 +99,8 @@
 				</ul>
 			</div>
 			<div class="hidden" id="htttinfo">
-				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs. Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
 				<ul class="links rightlinks">
 					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
 					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
@@ -114,46 +111,46 @@
 			<div class="hidden" id="thebends">
 				<img class="albumimg" src="images/radiohead/the_bends.jpg" alt="The Bends">
 				<div class="fullpanelinfoicon" id="thebendsfpinfoicon">
-					<img id="thebendsinfoicon" class="infoicon" onclick="unhide('thebendsinfo')" src="images/infoicon.png"/>
+					<img id="thebendsinfoicon" class="infoicon" onclick="unhide('thebendsinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">The Bends</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('httt2')">the guitar</button> / <button onclick="unhide('pablohoney')">all of it</button>.</h2>
 			</div>
 			<div class="hidden" id="amnesiac">
-				<img  class="albumimg" src="images/radiohead/amnesiac.jpg" alt="Amnesiac">
+				<img class="albumimg" src="images/radiohead/amnesiac.jpg" alt="Amnesiac">
 				<div class="fullpanelinfoicon" id="amnesiacfpinfoicon">
-					<img id="amnesiacinfoicon" class="infoicon" onclick="unhide('amnesiacinfo')" src="images/infoicon.png"/>
+					<img id="amnesiacinfoicon" class="infoicon" onclick="unhide('amnesiacinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">Amnesiac</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('httt2')">the bleeps</button> / <button onclick="unhide('tkol')">all of it</button>.</h2>
 			</div>
 			<div class="hidden" id="httt">
-				<img  class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
+				<img class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
 				<div class="fullpanelinfoicon" id="htttfpinfoicon">
-					<img id="htttinfoicon" class="infoicon" onclick="unhide('htttinfo')" src="images/infoicon.png"/>
+					<img id="htttinfoicon" class="infoicon" onclick="unhide('htttinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">Hail To the Thief</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">the bleeps</button> / <button onclick="unhide('httt')">all of it</button>.</h2>
 			</div>
-	</div>
-	<div id="albumgrid3">
+		</div>
+		<div id="albumgrid3">
 			<div class="hidden" id="pablohoney">
 				<img class="albumimg" src="images/radiohead/pablo_honey.jpg" alt="Pablo Honey">
 				<h4 class="desc">Pablo Honey</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">all of it</button>.</h2>
 			</div>
 			<div class="hidden" id="httt2">
-				<img  class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
+				<img class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
 				<h4 class="desc">Hail To the Thief</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the bleeps</button> / <button onclick="unhide('amnesiac')">all of it</button>.</h2>
 			</div>
 			<div class="hidden" id="tkol">
-				<img  class="albumimg" src="images/radiohead/tkol.jpg" alt="The King Of Limbs">
+				<img class="albumimg" src="images/radiohead/tkol.jpg" alt="The King Of Limbs">
 				<h4 class="desc">The King Of Limbs</h4>
 				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">the bleeps</button> / <button onclick="unhide('httt')">all of it</button>.</h2>
 			</div>
+		</div>
 	</div>
-</div>
 	<script src="scripts/main.js"></script>
 </body>
 

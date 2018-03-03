@@ -18,9 +18,13 @@ a {
   font-family: 'Work Sans', sans-serif;
 }
 
-.hidden { visibility: hidden;}
+.hidden {
+  visibility: hidden;
+}
 
-.unhidden { visibility: visible;}
+.unhidden {
+  visibility: visible;
+}
 
 /* Background */
 
@@ -60,12 +64,12 @@ body {
   background-color: #F5F5F5;
 }
 
-#genre {
+#radiohead {
   grid-area: genre;
   background-color: #0F1626;
 }
 
-#artist {
+#kanye {
   grid-area: artist;
   background-color: #FF533D;
 }
@@ -74,6 +78,8 @@ body {
   grid-area: about;
   background-color: #fcd581;
 }
+
+/*Grids*/
 
 #navgrid {
   justify-items: stretch;
@@ -84,148 +90,11 @@ body {
   grid-area: nav;
 }
 
-/*Flowchart Gallery*/
-
-#helptexttop {
-  grid-area: helptexttop;
-  align-self: center;
-  margin: 2em auto 1em auto;
-}
-
-#okc {
-  grid-area: album1;
-}
-
-#kida {
-  grid-area: album2;
-}
-
-#okcinfo {
-  grid-area: frleft1;
-  background-color: white;
-  width: 24.75em;
-  color: #0F1626;
-  text-align: left;
-  padding: 2em 2em 2em 2em;
-  position: relative;
-}
-
-#kidainfo {
-  grid-area: frright1;
-  background-color: white;
-  width: 24.75em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
-
-#thebendsinfo {
-  grid-area: frright;
-  background-color: white;
-  width: 35em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
-
-#amnesiacinfo {
-  grid-area: frright;
-  background-color: white;
-  width: 35em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
-
-#htttinfo {
-  grid-area: frright;
-  background-color: white;
-  width: 35em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
-
-#thebends {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#amnesiac {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#httt {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#pablohoney {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#httt2 {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#tkol {
-  grid-area: album;
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#choosetext {
-  margin-top: 3em;
-  grid-area: choosetext;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-}
-
-#albumgrid {
+#body {
   grid-template-columns: 1fr 18.75em 18.75em 18.75em 18.75em 1fr;
   grid-column-gap: 6em;
   grid-template-rows: 20% 23.438em 20% 23.438em 20%;
-  grid-template-areas:  "helptexttop helptexttop helptexttop helptexttop helptexttop helptexttop"
-                        "frleft frleft1 album1 album2 frright1 frright"
-                        "frleft choosetext choosetext choosetext choosetext frright"
-                        "frleft album3 album3 album3 album3 frright"
-                        "frleft album3 album3 album3 album3 frright"
-                        "frleft album4 album4 album4 album4 frright"
-                        "frleft album4 album4 album4 album4 frright";
+  grid-template-areas: "helptexttop helptexttop helptexttop helptexttop helptexttop helptexttop" "frleft frleft1 album1 album2 frright1 frright" "frleft choosetext choosetext choosetext choosetext frright" "frleft album3 album3 album3 album3 frright" "frleft album3 album3 album3 album3 frright" "frleft album4 album4 album4 album4 frright" "frleft album4 album4 album4 album4 frright";
   display: grid;
   grid-area: body;
   color: #FFF;
@@ -236,19 +105,28 @@ body {
   grid-area: album3;
   display: grid;
   grid-column-gap: 9em;
-  grid:
-    "frleft album frright" 23.438em
-    "choosetext2 choosetext2 choosetext2" 1fr
-    / 28.125em 18.75em 28.125em ;
+  grid: "frleft album frright" 23.438em "choosetext2 choosetext2 choosetext2" 1fr / 28.125em 18.75em 28.125em;
 }
 
 #albumgrid3 {
   grid-area: album4;
   display: grid;
-  grid:
-    "frleft album frright" 23.438em
-    "choosetext3 choosetext3 choosetext3" 1fr
-    / 28.125em 18.75em 28.125em ;
+  grid: "frleft album frright" 23.438em "choosetext3 choosetext3 choosetext3" 1fr / 28.125em 18.75em 28.125em;
+}
+
+/*Misc*/
+
+#helptexttop {
+  grid-area: helptexttop;
+  align-self: center;
+  margin: 2em auto 1em auto;
+}
+
+#choosetext {
+  margin-top: 3em;
+  grid-area: choosetext;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .choosetext2 {
@@ -281,111 +159,4 @@ button {
   outline: none;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   color: white;
-}
-
-.albumthumb {
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.albuminfo {
-  background-color: white;
-  width: 24.75em;
-  color: #0F1626;
-  text-align: left;
-  padding: 2em 2em 2em 2em;
-}
-
-.albumimg {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.fullpanelinfoicon:hover {
-  cursor:pointer;
-}
-
-.leftinfotext {
-  padding-right: 4em;
-}
-
-.rightinfotext {
-  padding-left: 4em;
-}
-
-.links {
-  bottom: 1em;
-  position: absolute;
-  list-style-type: none;
-}
-
-.rightlinks {
-  right: 2em;
-}
-
-.fullpanelinfoicon {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: .3s ease;
-}
-
-#okcfpinfoicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#kidafpinfoicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#thebendsfpinfoicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#amnesiacfpinfoicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#htttfpinfoicon {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.infoicon {
-  opacity: 0.5;
-}
-
-#okc:hover #okcfpinfoicon{
-  visibility: visible;
-  opacity: 1;
-}
-
-#kida:hover #kidafpinfoicon{
-  visibility: visible;
-  opacity: 1;
-}
-
-#thebends:hover #thebendsfpinfoicon{
-  visibility: visible;
-  opacity: 1;
-}
-
-#amnesiac:hover #amnesiacfpinfoicon{
-  visibility: visible;
-  opacity: 1;
-}
-
-#httt:hover #htttfpinfoicon{
-  visibility: visible;
-  opacity: 1;
 }
