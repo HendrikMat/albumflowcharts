@@ -86,6 +86,78 @@
   left: 0;
 }
 
+#thebends2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#amnesiac2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#inrainbows {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#pablohoney2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#tkol2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#inrainbows2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#amsp {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#amsp2 {
+  grid-area: album;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 /* Info container classes */
 
 .leftinfotext {
@@ -162,6 +234,127 @@
   position: relative;
 }
 
+#pablohoneyinfo {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#httt2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#tkolinfo {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#thebends2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#amnesiac2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#inrainbowsinfo {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#pablohoney2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#tkol2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#inrainbows2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#amspinfo {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#amsp2info {
+  grid-area: frright;
+  background-color: white;
+  width: 35em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
 /* Infoicons */
 
 .infoicon {
@@ -208,6 +401,61 @@
   visibility: hidden;
 }
 
+#pablohoneyfpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#httt2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#tkolfpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#thebends2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#amnesiac2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#inrainbowsfpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#pablohoney2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#tkol2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#inrainbows2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#amspfpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#amsp2fpinfoicon {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Album hover infoicon */
 
 #okc:hover #okcfpinfoicon {
@@ -231,6 +479,61 @@
 }
 
 #httt:hover #htttfpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#pablohoney:hover #pablohoneyfpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#httt2:hover #httt2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#tkol:hover #tkolfpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#thebends2:hover #thebends2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#amnesiac2:hover #amnesiac2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#inrainbows:hover #inrainbowsfpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#pablohoney2:hover #pablohoney2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#tkol2:hover #tkol2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#inrainbows2:hover #inrainbows2fpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#amsp:hover #amspfpinfoicon {
+  visibility: visible;
+  opacity: 1;
+}
+
+#amsp2:hover #amsp2fpinfoicon {
   visibility: visible;
   opacity: 1;
 }

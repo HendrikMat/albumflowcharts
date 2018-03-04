@@ -9,6 +9,8 @@
 	<link href="style/index.css" type="text/css" rel="stylesheet" />
 	<link href="style/info.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body id="grid">
@@ -68,6 +70,7 @@
 			</div>
 			<h4 class="desc">OK Computer</h4>
 		</div>
+
 		<div class="albumthumb" id="kida">
 			<img class="albumimg" src="images/radiohead/kid_a.jpg" alt="Kid A">
 			<div class="fullpanelinfoicon" id="kidafpinfoicon">
@@ -75,7 +78,7 @@
 			</div>
 			<h4 class="desc">Kid A</h4>
 		</div>
-		<h2 id="choosetext">I liked <button onclick="unhide('thebends')">OK Computer</button> / <button onclick="unhide('amnesiac')">Kid A</button> / <button onclick="unhide('httt')">both</button>.</h2>
+		<h2 id="btntxt1">I liked <button class="firstgenbtn" onclick="unhidebtn1('thebends')">OK Computer</button> / <button class="firstgenbtn" onclick="unhidebtn1('amnesiac')">Kid A</button> / <button class="firstgenbtn" onclick="unhidebtn1('httt')">both</button>.</h2>
 
 		<div id="albumgrid2">
 			<div class="hidden" id="thebendsinfo">
@@ -108,46 +111,243 @@
 					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
 				</ul>
 			</div>
+
 			<div class="hidden" id="thebends">
 				<img class="albumimg" src="images/radiohead/the_bends.jpg" alt="The Bends">
 				<div class="fullpanelinfoicon" id="thebendsfpinfoicon">
 					<img id="thebendsinfoicon" class="infoicon" onclick="unhide('thebendsinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">The Bends</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('httt2')">the guitar</button> / <button onclick="unhide('pablohoney')">all of it</button>.</h2>
+				<h2>I liked <button class="secondgenbtn" onclick="unhidebtn2('httt2')">the guitar</button> / <button class="secondgenbtn" onclick="unhidebtn2('pablohoney')">all of it</button>.</h2>
 			</div>
+
 			<div class="hidden" id="amnesiac">
 				<img class="albumimg" src="images/radiohead/amnesiac.jpg" alt="Amnesiac">
 				<div class="fullpanelinfoicon" id="amnesiacfpinfoicon">
 					<img id="amnesiacinfoicon" class="infoicon" onclick="unhide('amnesiacinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">Amnesiac</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('httt2')">the bleeps</button> / <button onclick="unhide('tkol')">all of it</button>.</h2>
+				<h2>I liked <button class="secondgenbtn" onclick="unhidebtn2('httt2')">the bleeps</button> / <button class="secondgenbtn" onclick="unhidebtn2('tkol')">all of it</button>.</h2>
 			</div>
+
 			<div class="hidden" id="httt">
 				<img class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
 				<div class="fullpanelinfoicon" id="htttfpinfoicon">
 					<img id="htttinfoicon" class="infoicon" onclick="unhide('htttinfo')" src="images/infoicon.png" />
 				</div>
 				<h4 class="desc">Hail To the Thief</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">the bleeps</button> / <button onclick="unhide('httt')">all of it</button>.</h2>
+				<h2 id="btntxt2">I liked <button class="secondgenbtn" onclick="unhidebtn2('thebends2')">the guitar</button> / <button class="secondgenbtn" onclick="unhidebtn2('amnesiac2')">the bleeps</button> / <button class="secondgenbtn" onclick="unhidebtn2('inrainbows')">all of it</button>.</h2>
 			</div>
 		</div>
 		<div id="albumgrid3">
+			<div class="hidden" id="pablohoneyinfo">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="httt2info">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="tkolinfo">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="inrainbowsinfo">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="thebends2info">
+				<p class="rightinfotext">"The Bends" is the 2nd studio album by Radiohead. It has been described as an alternative rock, Britpop, and indie rock album. The Bends marked the beginning of a shift in aesthetics and themes for the band, with greater use of keyboards and more
+					abrasive guitar tracks, while balancing them with subtler ones.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/500FEaUzn8lN9zWFyZG5C2"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLDdjexgjElXTYl0B47qi92Q97E-CFQZzH"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/The-bends"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/The_Bends"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="amnesiac2info">
+				<p class="rightinfotext">"Amnesiac" is the 5th studio album by Radiohead. Recorded during the same sessions for the band's previous album Kid A, the album incorporates similar influences of electronic music, 20th century classical music, jazz and krautrock. Singer Thom Yorke
+					described it as "another take on Kid A, a form of explanation.". Its lyrics and artwork explore themes influenced by memory and reincarnation, with influences from ancient Greek and Egyptian mythology.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/6V9YnBmFjWmXCBaUVRCVXP"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLUzsWxMv86UkHQVc-wJ80FpM9V5aOWVhc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Amnesiac"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Amnesiac_(album)"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+
 			<div class="hidden" id="pablohoney">
 				<img class="albumimg" src="images/radiohead/pablo_honey.jpg" alt="Pablo Honey">
+				<div class="fullpanelinfoicon" id="pablohoneyfpinfoicon">
+					<img id="pablohoneyinfoicon" class="infoicon" onclick="unhide('pablohoneyinfo')" src="images/infoicon.png" />
+				</div>
 				<h4 class="desc">Pablo Honey</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">all of it</button>.</h2>
 			</div>
+
 			<div class="hidden" id="httt2">
 				<img class="albumimg" src="images/radiohead/httt.jpg" alt="Hail To the Thief">
+				<div class="fullpanelinfoicon" id="httt2fpinfoicon">
+					<img id="httt2infoicon" class="infoicon" onclick="unhide('httt2info')" src="images/infoicon.png" />
+				</div>
 				<h4 class="desc">Hail To the Thief</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the bleeps</button> / <button onclick="unhide('amnesiac')">all of it</button>.</h2>
+				<h2><button class="thirdgenbtn" onclick="unhidebtn3('inrainbows2')">More!</button></h2>
 			</div>
+
 			<div class="hidden" id="tkol">
 				<img class="albumimg" src="images/radiohead/tkol.jpg" alt="The King Of Limbs">
+				<div class="fullpanelinfoicon" id="tkolfpinfoicon">
+					<img id="tkolinfoicon" class="infoicon" onclick="unhide('tkolinfo')" src="images/infoicon.png" />
+				</div>
 				<h4 class="desc">The King Of Limbs</h4>
-				<h2 class="choosetext2">I liked <button onclick="unhide('thebends')">the guitar</button> / <button onclick="unhide('amnesiac')">the bleeps</button> / <button onclick="unhide('httt')">all of it</button>.</h2>
+			</div>
+
+			<div class="hidden" id="inrainbows">
+				<img class="albumimg" src="images/radiohead/in_rainbows.jpg" alt="In Rainbows">
+				<div class="fullpanelinfoicon" id="inrainbowsfpinfoicon">
+					<img id="inrainbowsinfoicon" class="infoicon" onclick="unhide('inrainbowsinfo')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">In Rainbows</h4>
+				<h2><button class="thirdgenbtn" onclick="unhidebtn3('amsp')">The same, but now with orchestras and choirs!</button></h2>
+			</div>
+
+			<div class="hidden" id="thebends2">
+				<img class="albumimg" src="images/radiohead/the_bends.jpg" alt="The Bends">
+				<div class="fullpanelinfoicon" id="thebends2fpinfoicon">
+					<img id="thebends2infoicon" class="infoicon" onclick="unhide('thebends2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">The Bends</h4>
+				<h2><button class="thirdgenbtn" onclick="unhidebtn3('pablohoney2')">More!</button></h2>
+			</div>
+
+			<div class="hidden" id="amnesiac2">
+				<img class="albumimg" src="images/radiohead/amnesiac.jpg" alt="Amnesiac">
+				<div class="fullpanelinfoicon" id="amnesiac2fpinfoicon">
+					<img id="amnesiac2infoicon" class="infoicon" onclick="unhide('amnesiac2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">Amnesiac</h4>
+				<h2 id="btntxt3"><button class="thirdgenbtn" onclick="unhidebtn3('tkol2')">More!</button></h2>
+			</div>
+		</div>
+
+		<div id="albumgrid4">
+			<div class="hidden" id="pablohoney2info">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="tkol2info">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="inrainbows2info">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="amspinfo">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+
+			<div class="hidden" id="pablohoney2">
+				<img class="albumimg" src="images/radiohead/pablo_honey.jpg" alt="Pablo Honey">
+				<div class="fullpanelinfoicon" id="pablohoney2fpinfoicon">
+					<img id="pablohoney2infoicon" class="infoicon" onclick="unhide('pablohoney2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">Pablo Honey</h4>
+			</div>
+
+			<div class="hidden" id="tkol2">
+				<img class="albumimg" src="images/radiohead/tkol.jpg" alt="The King Of Limbs">
+				<div class="fullpanelinfoicon" id="tkol2fpinfoicon">
+					<img id="tkol2infoicon" class="infoicon" onclick="unhide('tkol2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">The King Of Limbs</h4>
+			</div>
+
+			<div class="hidden" id="inrainbows2">
+				<img class="albumimg" src="images/radiohead/in_rainbows.jpg" alt="In Rainbows">
+				<div class="fullpanelinfoicon" id="inrainbows2fpinfoicon">
+					<img id="inrainbows2infoicon" class="infoicon" onclick="unhide('inrainbows2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">In Rainbows</h4>
+				<h2 id="btntxt4"><button class="fourthgenbtn" onclick="unhidebtn4('amsp2')">The same, but now with orchestras and choirs!</button></h2>
+			</div>
+
+			<div class="hidden" id="amsp">
+				<img class="albumimg" src="images/radiohead/amsp.jpg" alt="A Moon Shaped Pool">
+				<div class="fullpanelinfoicon" id="amspfpinfoicon">
+					<img id="amspinfoicon" class="infoicon" onclick="unhide('amspinfo')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">A Moon Shaped Pool</h4>
+			</div>
+		</div>
+
+		<div id="albumgrid5">
+			<div class="hidden" id="amsp2info">
+				<p class="rightinfotext">"Hail to the Thief" is the 6th studio album by Radiohead. To avoid the protracted recording sessions of their previous albums, "Kid A" and "Amnesiac", Radiohead recorded "Hail to the Thief" quickly, focusing on recording live takes rather than overdubs.
+					Songwriter Thom Yorke wrote many of the lyrics in response to the War on Terror and the resurgence of right-wing politics in the west at the turn of the millennium.</p>
+				<ul class="links rightlinks">
+					<li><a href="https://open.spotify.com/album/1oW3v5Har9mvXnGk0x4fHm"><h3>Spotify</h3></a></li>
+					<li><a href="https://www.youtube.com/playlist?list=PLmZXsrx9kjYz-noi6KyrT0wEC-Ok45CJc"><h3>Youtube</h3></a></li>
+					<li><a href="https://genius.com/albums/Radiohead/Hail-to-the-thief"><h3>Genius</h3></a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Hail_to_the_Thief"><h3>Wikipedia</h3></a></li>
+				</ul>
+			</div>
+
+			<div class="hidden" id="amsp2">
+				<img class="albumimg" src="images/radiohead/amsp.jpg" alt="A Moon Shaped Pool">
+				<div class="fullpanelinfoicon" id="amsp2fpinfoicon">
+					<img id="amsp2infoicon" class="infoicon" onclick="unhide('amsp2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">A Moon Shaped Pool</h4>
 			</div>
 		</div>
 	</div>
