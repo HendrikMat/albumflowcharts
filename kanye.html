@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Album Flowcharts</title>
+	<link href="style/kanye.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="grid">
+	<nav id="navgrid">
+		<div class="navitem" id="title">
+			<a>
+				Album Flowcharts
+				<span class="fullpanellink"></span>
+			</a>
+		</div>
+		<div class="navitem" id="radiohead">
+			<a href="index.html">
+				Radiohead
+				<span class="fullpanellink"></span>
+			</a>
+		</div>
+		<div class="navitem" id="kanye">
+			<a href="kanye.html">
+				Kanye West
+				<span class="fullpanellink"></span>
+			</a>
+		</div>
+		<div class="navitem" id="about">
+			<a href="about.html">
+				About
+				<span class="fullpanellink"></span>
+			</a>
+		</div>
+	</nav>
+    <div id="body">
+      <h1 class="text-center" id="toptxt">Listen to both, then make your choice.</h1>
+      <div class="hidden" id="lrinfo">
+        <p class="info">Lorem ipsum.</p>
+        <ul class="links">
+          <li><a href=""><h3>Spotify</h3></a></li>
+        </ul>
+      </div>
+      <div id="lr">
+        <img class="img" src="images/kanye/lr.jpg" alt="Late Registration">
+        <div class="fpbtn" id="lrfpbtn">
+          <img id="lrbtn" class="infoicon" onclick="unhide('lrinfo')" src="images/infoicon.png" />
+        </div>
+        <h4 class="desc">Late Registration</h4>
+      </div>
+      <h2 class="btntxt" id="btntxt1"><button class="firstgenbtn" onclick="unhide('mbdtf')">More complex production</button> / <button class="firstgenbtn" onclick="unhide('grad')">Popier</button> / <button class="firstgenbtn" onclick="unhide('cd')">I loved this.</button>.</h2>
+
+      <div class="hidden" id="mbdtfinfo">
+        <p class="info"></p>
+        <ul class="links">
+          <li><a href=""><h3>Spotify</h3></a></li>
+        </ul>
+      </div>
+      <div class="hidden" id="mbdtf">
+        <img class="img" src="images/kanye/mbdtf.jpg" alt="My Beautiful Dark Twisted Fantasy">
+        <div class="fpbtn" id="mbdtffpbtn">
+          <img id="mbdtfbtn" class="infoicon" onclick="unhide('mbdtfinfo')" src="images/infoicon.png" />
+        </div>
+        <h4 class="desc">My Beautiful Dark Twisted Fantasy</h4>
+      </div>
+      <h2 class="btntxt" id="btntxt2"><button class="secondgenbtn" onclick="unhide('mbdtf')">More complex production</button> / <button class="firstgenbtn" onclick="unhide('grad')">Popier</button> / <button class="firstgenbtn" onclick="unhide('cd')">I loved this.</button>.</h2>
+    </div>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>

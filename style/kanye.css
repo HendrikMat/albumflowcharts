@@ -1,0 +1,255 @@
+/* GENERAL */
+
+#grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 1fr;
+  grid-template-areas: "nav" "body";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.unhidden {
+  visibility: visible;
+}
+
+/* Background */
+
+body {
+  background-color: #94573c;
+}
+
+/* Navigation Bar */
+
+.navitem {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#title {
+  grid-area: title;
+  color: #333;
+  background-color: #F5F5F5;
+}
+
+#radiohead {
+  grid-area: genre;
+  background-color: #1d1b27;
+}
+
+#kanye {
+  grid-area: artist;
+  background-color: #94573c;
+}
+
+#about {
+  grid-area: about;
+  background-color: #7e2239;
+}
+
+/*Makes the whole panel clickable*/
+
+.fullpanellink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8,
+		 make sure you have an empty gif */
+  background-image: url('empty.gif');
+}
+
+/*Grids*/
+
+#navgrid {
+  justify-items: stretch;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 150px;
+  grid-template-areas: "title title genre artist about";
+  display: grid;
+  grid-area: nav;
+}
+
+#body {
+  grid-template-columns: 1fr 18.75em 18.75em 18.75em 1fr;
+  grid-column-gap: 6em;
+  grid-template-rows: 12em 23.438em 12em 23.438em 12em;
+  grid-template-areas:
+  "toptxt toptxt toptxt toptxt toptxt "
+  "frleft frleft1 album1 frright1 frright"
+  "frleft btntxt btntxt btntxt frright"
+  "frleft frleft2 album2 frright2 frright"
+  "frleft btntxt2 btntxt2 btntxt2 frright"
+  "frleft frleft3 album3 frright3 frright"
+  "frleft btntxt3 btntxt3 btntxt3 frright";
+  display: grid;
+  grid-area: body;
+  color: #FFF;
+}
+
+#lr {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album1;
+}
+
+#lrinfo {
+  grid-area: frright1;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#mbdtf {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album2;
+}
+
+#mbdtfinfo {
+  grid-area: frright2;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+.lrinfo {
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+  margin-left: 4em;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.links {
+  bottom: 1em;
+  position: absolute;
+  list-style-type: none;
+  right: 2em;
+}
+
+.infoicon {
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.fpbtn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s ease;
+  z-index: 2;
+}
+
+.fpbtn:hover {
+  cursor: pointer;
+}
+
+#lrfpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#lr:hover #lrfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mbdtfpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mbdtf:hover #mbdtffpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Misc*/
+
+#toptxt {
+  grid-area: toptxt;
+  align-self: center;
+  margin: 2em auto 1em auto;
+}
+
+#btntxt1 {
+  grid-area: btntxt;
+}
+
+.btntxt {
+  margin-top: 3em;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.desc {
+  font-size: 20px;
+  color: #FF533D;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  position: relative;
+  padding-top: 16.3em;
+  top: 0;
+  left: 0;
+}
+
+button {
+  font-family: "Work Sans", sans-serif;
+  justify-content: center;
+  align-self: center;
+  background: transparent;
+  padding: 0.5rem .5rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  color: white;
+}
