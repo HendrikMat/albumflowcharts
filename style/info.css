@@ -358,7 +358,8 @@
 /* Infoicons */
 
 .infoicon {
-  opacity: 0.5;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .fullpanelinfoicon {
@@ -368,10 +369,6 @@
   top: 0;
   left: 0;
   transition: .3s ease;
-}
-
-.fullpanelinfoicon:hover {
-  cursor: pointer;
 }
 
 /* So many id because hover needs specificy */

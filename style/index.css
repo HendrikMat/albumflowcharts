@@ -57,12 +57,12 @@ body {
 
 #kanye {
   grid-area: artist;
-  background-color: #FF533D;
+  background-color: #f78c58;
 }
 
 #about {
   grid-area: about;
-  background-color: #fcd581;
+  background-color: #7e2239;
 }
 
 /*Makes the whole panel clickable*/
