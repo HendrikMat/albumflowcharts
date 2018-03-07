@@ -72,6 +72,6 @@ function unhidebtn4(divID) {
   if (item) {
 
     item.className = (item.className == "hidden") ? "unhidden" : "hidden";
-    $(".thirdgenbtn").prop('disabled', true);
+    $(".fourthgenbtn").prop('disabled', true);
   }
 }

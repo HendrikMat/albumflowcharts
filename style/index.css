@@ -184,6 +184,7 @@ body {
   margin-left: -10em;
   margin-right: -10em;
   grid-area: choosetext3;
+  line-height: 2.5em;
 }
 
 #albumgrid4 h2 {
@@ -194,6 +195,7 @@ body {
   margin-left: -10em;
   margin-right: -10em;
   grid-area: choosetext4;
+  line-height: 2.5em;
 }
 
 #albumgrid5 h2 {
@@ -204,6 +206,7 @@ body {
   margin-left: -10em;
   margin-right: -10em;
   grid-area: choosetext5;
+  line-height: 2.5em;
 }
 
 h4.desc {
