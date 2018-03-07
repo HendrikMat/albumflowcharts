@@ -117,7 +117,7 @@ body {
   display: grid;
   grid-column-gap: 9em;
   grid: "frleft album frright" 23.438em
-  "choosetext2 choosetext2 choosetext2" 1fr
+  "choosetext choosetext choosetext" 1fr
    / 28.125em 18.75em 28.125em;
 }
 
@@ -127,7 +127,7 @@ body {
   display: grid;
   grid-column-gap: 9em;
   grid: "frleft album frright" 23.438em
-  "choosetext3 choosetext3 choosetext3" 1fr
+  "choosetext choosetext choosetext" 1fr
    / 28.125em 18.75em 28.125em;
 }
 
@@ -137,7 +137,7 @@ body {
   display: grid;
   grid-column-gap: 9em;
   grid: "frleft album frright" 23.438em
-  "choosetext4 choosetext4 choosetext4" 1fr
+  "choosetext choosetext choosetext" 1fr
    / 28.125em 18.75em 28.125em;
 }
 
@@ -147,7 +147,7 @@ body {
   display: grid;
   grid-column-gap: 9em;
   grid: "frleft album frright" 23.438em
-  "choosetext5 choosetext5 choosetext5" 1fr
+  "choosetext choosetext choosetext" 1fr
    / 28.125em 18.75em 28.125em;
 }
 
@@ -159,54 +159,15 @@ body {
   margin: 2em auto 1em auto;
 }
 
-#btntxt1 {
+.btntxt {
+  position: relative;
   margin-top: 3em;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  margin-left: -10em;
+  margin-right: -10em;
+  line-height: 2.5em;
   grid-area: choosetext;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-}
-
-#albumgrid2 h2 {
-  position: relative;
-  margin-top: 3em;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  margin-left: -10em;
-  margin-right: -10em;
-  grid-area: choosetext2;
-}
-
-#albumgrid3 h2 {
-  position: relative;
-  margin-top: 3em;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  margin-left: -10em;
-  margin-right: -10em;
-  grid-area: choosetext3;
-  line-height: 2.5em;
-}
-
-#albumgrid4 h2 {
-  position: relative;
-  margin-top: 3em;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  margin-left: -10em;
-  margin-right: -10em;
-  grid-area: choosetext4;
-  line-height: 2.5em;
-}
-
-#albumgrid5 h2 {
-  position: relative;
-  margin-top: 3em;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
-  margin-left: -10em;
-  margin-right: -10em;
-  grid-area: choosetext5;
-  line-height: 2.5em;
 }
 
 h4.desc {
