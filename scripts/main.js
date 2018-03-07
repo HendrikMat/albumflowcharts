@@ -16,19 +16,19 @@ $('.firstgenbtn').click(() => {
 
 $('.secondgenbtn').click(() => {
   $('html, body').animate({
-    scrollTop: $('#btntxt2').offset().top
+    scrollTop: $('.secondgenbtn').offset().top
   }, 1000);
 });
 
 $('.thirdgenbtn').click(() => {
   $('html, body').animate({
-    scrollTop: $('#btntxt3').offset().top
+    scrollTop: $('thirdgenbtn').offset().top
   }, 1000);
 });
 
 $('.fourthgenbtn').click(() => {
   $('html, body').animate({
-    scrollTop: $('#btntxt4').offset().top
+    scrollTop: $('.fourthgenbtn').offset().top
   }, 1000);
 });
 
