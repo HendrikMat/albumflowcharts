@@ -93,7 +93,7 @@ body {
 #body {
   grid-template-columns: 1fr 18.75em 18.75em 18.75em 1fr;
   grid-column-gap: 6em;
-  grid-template-rows: 12em 23.438em 12em 23.438em 12em;
+  grid-template-rows: 12em 23.438em 12em 23.438em 12em 23.438em 12em 23.438em 12em;
   grid-template-areas:
   "toptxt toptxt toptxt toptxt toptxt "
   "frleft frleft1 album1 frright1 frright"
@@ -101,7 +101,9 @@ body {
   "frleft frleft2 album2 frright2 frright"
   "frleft btntxt2 btntxt2 btntxt2 frright"
   "frleft frleft3 album3 frright3 frright"
-  "frleft btntxt3 btntxt3 btntxt3 frright";
+  "frleft btntxt3 btntxt3 btntxt3 frright"
+  "frleft frleft4 album4 frright4 frright"
+  "frleft btntxt4 btntxt4 btntxt4 frright";
   display: grid;
   grid-area: body;
   color: #FFF;
@@ -157,7 +159,18 @@ body {
 
 .desc {
   font-size: 20px;
-  color: #f78c58;
+  color: black;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  position: relative;
+  padding-top: 16.3em;
+  top: 0;
+  left: 0;
+}
+
+.desc4 {
+  font-size: 20px;
+  color: black;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   position: relative;

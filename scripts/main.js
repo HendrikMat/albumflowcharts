@@ -22,7 +22,7 @@ $('.secondgenbtn').click(() => {
 
 $('.thirdgenbtn').click(() => {
   $('html, body').animate({
-    scrollTop: $('thirdgenbtn').offset().top
+    scrollTop: $('.thirdgenbtn').offset().top
   }, 1000);
 });
 
