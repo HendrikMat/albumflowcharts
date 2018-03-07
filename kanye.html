@@ -7,6 +7,7 @@
 
 	<title>Album Flowcharts</title>
 	<link href="style/kanye.css" type="text/css" rel="stylesheet" />
+	<link href="style/kanyeinfo.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,7 +40,7 @@
 			</a>
 		</div>
 	</nav>
-<!--    <div id="body">
+    <div id="body">
       <h1 class="text-center" id="toptxt">Listen to this album, then choose </h1>
       <div class="hidden" id="lrinfo">
         <p class="info">Lorem ipsum.</p>
@@ -54,7 +55,39 @@
         </div>
         <h4 class="desc">Late Registration</h4>
       </div>
-      <h2 class="btntxt" id="btntxt1">I want <button class="firstgenbtn" onclick="unhide('mbdtf')">more complex production</button> / <button class="firstgenbtn" onclick="unhide('grad')">it to be more popier</button> / <button class="firstgenbtn" onclick="unhide('cd')">more of this</button>.</h2>
+      <h2 class="btntxt first">I want <button class="firstgenbtn" onclick="unhidebtn1('mbdtf')">more complex production</button> / <button class="firstgenbtn" onclick="unhidebtn1('grad')">it to be more popier</button> / <button class="firstgenbtn" onclick="unhidebtn1('cd')">more of this</button>.</h2>
+
+
+
+			<div class="hidden" id="gradinfo">
+        <p class="info"></p>
+        <ul class="links">
+          <li><a href=""><h3>Spotify</h3></a></li>
+        </ul>
+      </div>
+      <div class="hidden" id="grad">
+        <img class="img" src="images/kanye/grad.jpg" alt="Graduation">
+        <div class="fpbtn" id="gradfpbtn">
+          <img id="gradbtn" class="infoicon" onclick="unhide('gradinfo')" src="images/infoicon.png" />
+        </div>
+        <h4 class="desc">Graduation</h4>
+				<h2 class="btntxt second">I'd like it to be <button class="secondgenbtn" onclick="unhidebtn2('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad')">more popier</button>.</h2>
+      </div>
+
+			<div class="hidden" id="cdinfo">
+				<p class="info"></p>
+				<ul class="links">
+					<li><a href=""><h3>Spotify</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="cd">
+				<img class="img" src="images/kanye/cd.jpg" alt="College Dropout">
+				<div class="fpbtn" id="cdfpbtn">
+					<img id="cdbtn" class="infoicon" onclick="unhide('cdinfo')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">College Dropout</h4>
+				<h2 class="btntxt second">I'd like it to be <button class="secondgenbtn" onclick="unhidebtn2('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad')">more popier</button>.</h2>
+			</div>
 
       <div class="hidden" id="mbdtfinfo">
         <p class="info"></p>
@@ -68,9 +101,56 @@
           <img id="mbdtfbtn" class="infoicon" onclick="unhide('mbdtfinfo')" src="images/infoicon.png" />
         </div>
         <h4 class="desc">My Beautiful Dark Twisted Fantasy</h4>
-				<h2 class="btntxt" id="btntxt2"><button class="secondgenbtn" onclick="unhide('mbdtf')">More complex production</button> / <button class="firstgenbtn" onclick="unhide('grad')">Popier</button> / <button class="firstgenbtn" onclick="unhide('cd')">I loved this.</button>.</h2>
+				<h2 class="btntxt second">I'd like it to be <button class="secondgenbtn" onclick="unhidebtn2('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad2')">more popier</button>.</h2>
       </div>
-		</div> -->
+
+
+
+			<div class="hidden" id="tlopinfo">
+				<p class="info"></p>
+				<ul class="links">
+					<li><a href=""><h3>Spotify</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="tlop">
+				<img class="img" src="images/kanye/tlop.jpg" alt="The Life Of Pablo">
+				<div class="fpbtn" id="tlopfpbtn">
+					<img id="tlopbtn" class="infoicon" onclick="unhide('tlopinfo')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">The Life Of Pablo</h4>
+				<h2 class="btntxt third">I'd like it to be <button class="thirdgenbtn" onclick="unhidebtn3('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad')">more popier</button>.</h2>
+			</div>
+
+			<div class="hidden" id="yeezusinfo">
+				<p class="info"></p>
+				<ul class="links">
+					<li><a href=""><h3>Spotify</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="yeezus">
+				<img class="img" src="images/kanye/yeezus.jpg" alt="Yeezus">
+				<div class="fpbtn" id="yeezusfpbtn">
+					<img id="yeezusbtn" class="infoicon" onclick="unhide('yeezusinfo')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">Yeezus</h4>
+				<h2 class="btntxt third">I'd like it to be <button class="thirdgenbtn" onclick="unhidebtn3('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad')">more popier</button>.</h2>
+			</div>
+
+			<div class="hidden" id="grad2info">
+				<p class="info"></p>
+				<ul class="links">
+					<li><a href=""><h3>Spotify</h3></a></li>
+				</ul>
+			</div>
+			<div class="hidden" id="grad2">
+				<img class="img" src="images/kanye/grad.jpg" alt="Graduation">
+				<div class="fpbtn" id="grad2fpbtn">
+					<img id="grad2btn" class="infoicon" onclick="unhide('grad2info')" src="images/infoicon.png" />
+				</div>
+				<h4 class="desc">Graduation</h4>
+				<h2 class="btntxt third">I'd like it to be <button class="thirdgenbtn" onclick="unhidebtn3('tlop')">newer</button> / <button class="secondgenbtn" onclick="unhidebtn2('yeezus')">more electronic</button> / <button class="secondgenbtn" onclick="unhidebtn2('grad')">more popier</button>.</h2>
+			</div>
+		</div>
 	<script src="scripts/main.js"></script>
 </body>
 

@@ -1,0 +1,232 @@
+#lr {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album1;
+}
+
+#lrinfo {
+  grid-area: frright1;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#mbdtf {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album2;
+}
+
+#mbdtfinfo {
+  grid-area: frright2;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#grad {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album2;
+}
+
+#gradinfo {
+  grid-area: frright2;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#cd {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album2;
+}
+
+#cdinfo {
+  grid-area: frright2;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#tlop {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album3;
+}
+
+#tlopinfo {
+  grid-area: frright3;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#yeezus {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album3;
+}
+
+#yeezusinfo {
+  grid-area: frright3;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+#grad2 {
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-area: album3;
+}
+
+#grad2info {
+  grid-area: frright3;
+  background-color: white;
+  width: 24.75em;
+  color: #0F1626;
+  text-align: right;
+  padding: 2em 2em 2em 2em;
+  justify-self: end;
+  position: relative;
+}
+
+
+
+
+#lrfpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#lr:hover #lrfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mbdtfpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mbdtf:hover #mbdtffpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#gradpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#grad:hover #gradfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#cdpbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#cd:hover #cdfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#tloppbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#tlop:hover #tlopfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#yeezuspbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#yeezus:hover #yeezusfpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#grad2pbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#grad2:hover #grad2fpbtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Misc*/
+
+#toptxt {
+  grid-area: toptxt;
+  align-self: center;
+  margin: 2em auto 1em auto;
+}
+
+.first {
+  grid-area: btntxt;
+}
+
+.second {
+  grid-area: btntxt2;
+}
+
+.third {
+  grid-area: btntxt3;
+}

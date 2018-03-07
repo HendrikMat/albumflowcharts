@@ -107,45 +107,6 @@ body {
   color: #FFF;
 }
 
-#lr {
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-  grid-area: album1;
-}
-
-#lrinfo {
-  grid-area: frright1;
-  background-color: white;
-  width: 24.75em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
-
-#mbdtf {
-  background-color: white;
-  border-radius: 0 0 2em 2em;
-  position: relative;
-  top: 0;
-  left: 0;
-  grid-area: album2;
-}
-
-#mbdtfinfo {
-  grid-area: frright2;
-  background-color: white;
-  width: 24.75em;
-  color: #0F1626;
-  text-align: right;
-  padding: 2em 2em 2em 2em;
-  justify-self: end;
-  position: relative;
-}
 
 .lrinfo {
   background-color: white;
@@ -188,44 +149,8 @@ body {
   z-index: 2;
 }
 
-.fpbtn:hover {
-
-}
-
-#lrfpbtn {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#lr:hover #lrfpbtn {
-  visibility: visible;
-  opacity: 1;
-}
-
-#mbdtfpbtn {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#mbdtf:hover #mbdtffpbtn {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*Misc*/
-
-#toptxt {
-  grid-area: toptxt;
-  align-self: center;
-  margin: 2em auto 1em auto;
-}
-
-#btntxt1 {
-  grid-area: btntxt;
-}
-
 .btntxt {
-  margin: 3em -10em 0 -10em;
+  margin: 3em -20em 0 -20em;
   text-align: center;
   font-family: "Work Sans", sans-serif;
 }
@@ -254,4 +179,10 @@ button {
   outline: none;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   color: white;
+}
+
+button:disabled {
+  background: #f78c58;
+  cursor: not-allowed;
+  opacity: 0.5;
 }
