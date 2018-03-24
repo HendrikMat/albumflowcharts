@@ -135,6 +135,10 @@ body {
   right: 2em;
 }
 
+.info {
+  padding-left: 4em;
+}
+
 .infoicon {
   opacity: 0.5;
   z-index: 3;

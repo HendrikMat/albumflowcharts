@@ -13,7 +13,7 @@
   width: 24.75em;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2em 2em 2em 4em;
   justify-self: end;
   position: relative;
 }
@@ -38,6 +38,10 @@
   position: relative;
 }
 
+#mbdtfdesc {
+  padding-top: 15.7em !important;
+}
+
 #mbdtf2 {
   background-color: white;
   border-radius: 0 0 2em 2em;
@@ -56,6 +60,10 @@
   padding: 2em 2em 2em 2em;
   justify-self: end;
   position: relative;
+}
+
+#mbdtf2desc {
+  padding-top: 15.7em !important;
 }
 
 #grad {
