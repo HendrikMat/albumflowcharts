@@ -1,6 +1,6 @@
 #lr {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -10,17 +10,19 @@
 #lrinfo {
   grid-area: frright1;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 4em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #mbdtf {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -30,21 +32,23 @@
 #mbdtfinfo {
   grid-area: frright2;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #mbdtfdesc {
-  padding-top: 15.7em !important;
+  padding-top: 1vw !important;
 }
 
 #mbdtf2 {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -54,21 +58,23 @@
 #mbdtf2info {
   grid-area: frright3;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #mbdtf2desc {
-  padding-top: 15.7em !important;
+  padding-top: 16.8vw !important;
 }
 
 #grad {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -78,17 +84,19 @@
 #gradinfo {
   grid-area: frright2;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #cd {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -98,17 +106,19 @@
 #cdinfo {
   grid-area: frright2;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #tlop {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -118,17 +128,19 @@
 #tlopinfo {
   grid-area: frright3;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #yeezus {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -138,17 +150,19 @@
 #yeezusinfo {
   grid-area: frright3;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #tlop2 {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -158,17 +172,19 @@
 #tlop2info {
   grid-area: frright4;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #yeezus2 {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -178,17 +194,19 @@
 #yeezus2info {
   grid-area: frright4;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #grad2 {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -198,17 +216,19 @@
 #grad2info {
   grid-area: frright3;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #heart {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -218,17 +238,19 @@
 #heartinfo {
   grid-area: frright3;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 #heart2 {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -238,12 +260,14 @@
 #heart2info {
   grid-area: frright4;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 
@@ -385,7 +409,8 @@
 #toptxt {
   grid-area: toptxt;
   align-self: center;
-  margin: 2em auto 1em auto;
+  margin: 2.5vw auto 1vw auto;
+  font-size: 1.8vw;
 }
 
 .first {

@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  font-size: 1vw;
 }
 
 #title {
@@ -84,16 +85,16 @@ body {
 #navgrid {
   justify-items: stretch;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 150px;
+  grid-template-rows: 8vw;
   grid-template-areas: "title title genre artist about";
   display: grid;
   grid-area: nav;
 }
 
 #body {
-  grid-template-columns: 1fr 18.75em 18.75em 18.75em 1fr;
-  grid-column-gap: 6em;
-  grid-template-rows: 12em 23.438em 12em 23.438em 12em 23.438em 12em 23.438em 12em;
+  grid-template-columns: 1fr 15.625% 15.625% 15.625% 1fr;
+  grid-column-gap: 7.5%;
+  grid-template-rows: 10vw 20.5vw 10vw 20.5vw 10vw 20.5vw 10vw 20.5vw 10vw;
   grid-template-areas:
   "toptxt toptxt toptxt toptxt toptxt "
   "frleft frleft1 album1 frright1 frright"
@@ -112,31 +113,35 @@ body {
 
 .lrinfo {
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
-  margin-left: 4em;
+  margin-left: 7vw;
+  font-size: 0.8vw;
 }
 
 .img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
 .links {
-  bottom: 1em;
+  padding-top: 5vw;
+  padding-left: 18.7vw;
+  bottom: 1vw;
   position: absolute;
   list-style-type: none;
-  right: 2em;
+  font-size: 0.85vw;
 }
 
 .info {
-  padding-left: 4em;
+  padding-left: 4vw;
+  font-size: 0.8vw;
 }
 
 .infoicon {
@@ -156,29 +161,31 @@ body {
 }
 
 .btntxt {
-  margin: 3em -20em 0 -20em;
+  margin: 3vw -20em 0 -20em;
   text-align: center;
   font-family: "Work Sans", sans-serif;
+  line-height: 2.5vw;
+  font-size: 1.2vw;
 }
 
 .desc {
-  font-size: 20px;
+  font-size: 1.2vw;
   color: black;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   position: relative;
-  padding-top: 16.3em;
+  padding-top: 1.4vw;
   top: 0;
   left: 0;
 }
 
 .desc4 {
-  font-size: 20px;
+  font-size: 1.2vw;
   color: black;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   position: relative;
-  padding-top: 16.3em;
+  padding-top: 1.5vw;
   top: 0;
   left: 0;
 }
@@ -189,12 +196,12 @@ button {
   align-self: center;
   background: #49291a;
   opacity: 1;
-  padding: 0.5rem .5rem;
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
+  padding: 0.5vw .5vw;
+  margin: 0 0.5vw;
+  font-size: 1.4vw;
   letter-spacing: 1px;
   outline: none;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-radius: 17vw 1vw 17vw 1vw/1vw 17vw 1vw 17vw;
   color: white;
 }
 
@@ -202,4 +209,9 @@ button:disabled {
   background: #f78c58;
   cursor: not-allowed;
   opacity: 0.5;
+}
+
+img {
+  max-width:100%;
+  height:auto;
 }
