@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  font-size: 1vw;
 }
 
 #title {
@@ -84,16 +85,16 @@ body {
 #navgrid {
   justify-items: stretch;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 150px;
+  grid-template-rows: 8vw;
   grid-template-areas: "title title genre artist about";
   display: grid;
   grid-area: nav;
 }
 
 #body {
-  grid-template-columns: 1fr 18.75em 18.75em 18.75em 18.75em 1fr;
-  grid-column-gap: 6em;
-  grid-template-rows: 12em 23.438em 12em 23.438em 12em 23.438em 12em 23.438em 12em 23.438em 12em;
+  grid-template-columns: 1px 15.625% 15.625% 15.625% 15.625% 1px;
+  grid-column-gap: 7.5%;
+  grid-template-rows: 10vw 20.5vw 10vw 20.5vw 10vw 20.5vw 10vw 20.5vw 10vw 20.5vw 10vw;
   grid-template-areas:
   "helptexttop helptexttop helptexttop helptexttop helptexttop helptexttop"
   "frleft frleft1 album1 album2 frright1 frright"
@@ -115,40 +116,40 @@ body {
   position: relative;
   grid-area: album3;
   display: grid;
-  grid-column-gap: 9em;
-  grid: "frleft album frright" 23.438em
-  "choosetext choosetext choosetext" 1fr
-   / 28.125em 18.75em 28.125em;
+  grid-column-gap: 7.5%;
+  grid: "left frleft album frright right" 20.5vw
+  "choosetext choosetext choosetext choosetext choosetext" 1fr
+   / 1px 1fr 15.5vw 1fr 1px;
 }
 
 #albumgrid3 {
   position: relative;
   grid-area: album4;
   display: grid;
-  grid-column-gap: 9em;
-  grid: "frleft album frright" 23.438em
-  "choosetext choosetext choosetext" 1fr
-   / 28.125em 18.75em 28.125em;
+  grid-column-gap: 7.5%;
+  grid: "left frleft album frright right" 20.5vw
+  "choosetext choosetext choosetext choosetext choosetext" 1fr
+   / 1px 1fr 15.5vw 1fr 1px;
 }
 
 #albumgrid4 {
   position: relative;
   grid-area: album5;
   display: grid;
-  grid-column-gap: 9em;
-  grid: "frleft album frright" 23.438em
-  "choosetext choosetext choosetext" 1fr
-   / 28.125em 18.75em 28.125em;
+  grid-column-gap: 7.5%;
+  grid: "left frleft album frright right" 20.5vw
+  "choosetext choosetext choosetext choosetext choosetext" 1fr
+   / 1px 1fr 15.5vw 1fr 1px;
 }
 
 #albumgrid5 {
   position: relative;
   grid-area: album6;
   display: grid;
-  grid-column-gap: 9em;
-  grid: "frleft album frright" 23.438em
-  "choosetext choosetext choosetext" 1fr
-   / 28.125em 18.75em 28.125em;
+  grid-column-gap: 7.5%;
+  grid: "left frleft album frright right" 20.5vw
+  "choosetext choosetext choosetext choosetext choosetext" 1fr
+   / 1px 1fr 15.5vw 1fr 1px;
 }
 
 /*Misc*/
@@ -156,27 +157,29 @@ body {
 #helptexttop {
   grid-area: helptexttop;
   align-self: center;
-  margin: 2em auto 1em auto;
+  margin: 2.5vw auto 1vw auto;
+  font-size: 1.8vw;
 }
 
 .btntxt {
   position: relative;
-  margin-top: 3em;
+  margin-top: 3vw;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   margin-left: -10em;
   margin-right: -10em;
-  line-height: 2.5em;
+  line-height: 2.5vw;
   grid-area: choosetext;
+  font-size: 1.2vw;
 }
 
 h4.desc {
-  font-size: 20px;
+  font-size: 1.2vw;
   color: #0F1626;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   position: relative;
-  padding-top: 1em;
+  padding-top: 1.5vw;
   top: 0;
   left: 0;
 }
@@ -187,12 +190,12 @@ button {
   align-self: center;
   background: #03184a;
   opacity: 1;
-  padding: 0.5rem .5rem;
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
+  padding: 0.5vw .5vw;
+  margin: 0 0.5vw;
+  font-size: 1.4vw;
   letter-spacing: 1px;
   outline: none;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-radius: 17vw 1vw 17vw 1vw/1vw 17vw 1vw 17vw;
   color: white;
 }
 
@@ -200,4 +203,9 @@ button:disabled {
   background: #0F1626;
   cursor: not-allowed;
   opacity: 0.5;
+}
+
+img {
+  max-width:100%;
+  height:auto;
 }

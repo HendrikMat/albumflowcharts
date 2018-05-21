@@ -2,7 +2,7 @@
 
 .albumthumb {
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -10,10 +10,10 @@
 
 .albuminfo {
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: left;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
 }
 
 .albumimg {
@@ -35,7 +35,7 @@
 #thebends {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@
 #amnesiac {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@
 #httt {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -62,7 +62,7 @@
 #pablohoney {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -71,7 +71,7 @@
 #httt2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@
 #tkol {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@
 #thebends2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -98,7 +98,7 @@
 #amnesiac2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -107,7 +107,7 @@
 #inrainbows {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -116,7 +116,7 @@
 #pablohoney2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -125,7 +125,7 @@
 #tkol2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@
 #inrainbows2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -143,7 +143,7 @@
 #amsp {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -152,7 +152,7 @@
 #amsp2 {
   grid-area: album;
   background-color: white;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2.5vw 2.5vw;
   position: relative;
   top: 0;
   left: 0;
@@ -161,21 +161,29 @@
 /* Info container classes */
 
 .leftinfotext {
-  padding-right: 4em;
+  padding-right: 4vw;
+  font-size: 0.8vw;
+}
+
+.kidarightinfotext {
+  padding-left: 4vw;
+  font-size: 0.8vw;
 }
 
 .rightinfotext {
-  padding-left: 4em;
+  padding-left: 7vw;
+  font-size: 0.8vw;
 }
 
 .links {
-  bottom: 1em;
+  bottom: 1vw;
   position: absolute;
   list-style-type: none;
+  font-size: 0.85vw;
 }
 
 .rightlinks {
-  right: 2em;
+  right: 2.5vw;
 }
 
 /* Info container ids */
@@ -183,20 +191,20 @@
 #okcinfo {
   grid-area: frleft1;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: left;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   position: relative;
 }
 
 #kidainfo {
   grid-area: frright1;
   background-color: white;
-  width: 24.75em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -204,10 +212,10 @@
 #thebendsinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -215,10 +223,10 @@
 #amnesiacinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -226,10 +234,10 @@
 #htttinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -237,10 +245,10 @@
 #pablohoneyinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -248,10 +256,10 @@
 #httt2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -259,10 +267,10 @@
 #tkolinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -270,10 +278,10 @@
 #thebends2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -281,10 +289,10 @@
 #amnesiac2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -292,10 +300,10 @@
 #inrainbowsinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -303,10 +311,10 @@
 #pablohoney2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -314,10 +322,10 @@
 #tkol2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -325,10 +333,10 @@
 #inrainbows2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -336,10 +344,10 @@
 #amspinfo {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
@@ -347,10 +355,10 @@
 #amsp2info {
   grid-area: frright;
   background-color: white;
-  width: 35em;
+  width: 150%;
   color: #0F1626;
   text-align: right;
-  padding: 2em 2em 2em 2em;
+  padding: 2vw 2vw 2vw 2vw;
   justify-self: end;
   position: relative;
 }
